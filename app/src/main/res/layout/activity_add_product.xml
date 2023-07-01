@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProductActivity">
+
+    <TextView
+        android:id="@+id/tv_activity_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/work_sans_bold"
+        android:text="Add Product"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_add_product_add_product_activity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#385DBA"
+        android:fontFamily="@font/work_sans_medium"
+        android:padding="10dp"
+        android:text="Add Product"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/et_description"
+        app:layout_constraintStart_toStartOf="@+id/et_description"
+        app:layout_constraintTop_toBottomOf="@+id/et_description" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#385DBA"
+        android:ems="10"
+        android:fontFamily="@font/work_sans_medium"
+        android:hint="Enter Product Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/tv_activity_name"
+        app:layout_constraintHorizontal_bias="0.393"
+        app:layout_constraintStart_toStartOf="@+id/tv_activity_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_activity_name" />
+
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#385DBA"
+        android:ems="10"
+        android:fontFamily="@font/work_sans_medium"
+        android:hint="Enter Product Description"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/et_name"
+        app:layout_constraintStart_toStartOf="@+id/et_name"
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>
